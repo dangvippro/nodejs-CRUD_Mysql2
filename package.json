@@ -1,0 +1,31 @@
+{
+  "name": "mysql2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --inspect src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dangvippro/nodejs-CRUD_Mysql2.git"
+  },
+  "author": "DangVipPro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dangvippro/nodejs-CRUD_Mysql2/issues"
+  },
+  "homepage": "https://github.com/dangvippro/nodejs-CRUD_Mysql2#readme",
+  "dependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/node": "^7.22.19",
+    "@babel/preset-env": "^7.22.20",
+    "body-parse": "^0.1.0",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.1",
+    "nodemon": "^3.0.1"
+  }
+}

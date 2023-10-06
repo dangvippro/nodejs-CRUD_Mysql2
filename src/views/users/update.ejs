@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/products/index.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div id="editEmployeeModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form method="post">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Edit User</h4>
+                        <a href="/" role="button" class="close">&times;</a>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" name="userID" value="<%= User[0].id %>">
+                        <div class="form-group">
+                            <label>Fullname</label>
+                            <input type="text" class="form-control" required value="<%= User[0].fullname %>" name="userFullname">
+                        </div>
+                        <div class="form-group">
+                            <label>Password</label>
+                            <input type="text" class="form-control" required value="<%= User[0].password %>" name="userPassword">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input class="form-control" required value="<%= User[0].email %>" name="userEmail">
+                        </div>
+                        <div class="form-group">
+                            <label>Phone</label>
+                            <input type="number" class="form-control" required value="<%= User[0].phone %>" name="userPhone">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="/" role="button" class="btn btn-default">Cancel</a>
+                        <input type="submit" class="btn btn-info" value="Save">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
